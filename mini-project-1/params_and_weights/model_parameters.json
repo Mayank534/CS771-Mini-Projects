@@ -1,0 +1,25 @@
+{
+    "architecture": {
+        "input_shape": [
+            13,
+            215
+        ],
+        "output_shape": [
+            2
+        ]
+    },
+    "training": {
+        "max_len": 13,
+        "vocab_size": 215,
+        "learning_rate": 0.004999999888241291,
+        "loss_function": "sparse_categorical_crossentropy",
+        "metrics": [
+            "loss",
+            "compile_metrics"
+        ]
+    },
+    "preprocessing": {
+        "padding": "post",
+        "tokenizer_vocab_size": 215
+    }
+}

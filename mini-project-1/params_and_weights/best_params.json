@@ -1,0 +1,1 @@
+{"lstm_units": 10, "batch_size": 32, "learning_rate": 0.003, "epochs": 12, "stopped_epoch": 11}

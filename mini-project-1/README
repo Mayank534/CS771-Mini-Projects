@@ -1,0 +1,104 @@
+# Mini-project 1
+# Kasukabe_Defence_Group
+## Group No. 8
+Create Environment (Optional but Recommended)
+
+```
+python -m venv venv
+.\venv\Scripts\activate
+
+```
+
+
+```
+pip install tensorflow pandas
+pip install numpy
+pip install scikit-learn
+
+```
+
+Then run ```8.py``` file in the terminal 
+
+
+It will produce four output ``` pred_emoticon.txt ```,``` pred_deepfeat```, ```pred_textseq```, ``` pred_combined```.
+
+We have used the best parameters only here, the rest of all parameters of how we obtained them and testing on different amount of dataset can be found in the other files.
+
+For running ```8.py``` you need the datasets in the same folder as this file (in same format as mini-project-1).
+
+The ```.ipynb``` files are already runned, so one can view the output without running.
+
+We have also uploaded some of the models we tried but did not give the best results.
+
+We have attached the terminal output after running 8.py file. (named as terminal_output.txt)
+
+The file will take almost ~5 mins to predct the output
+
+The final .ipynb files are named as ```Task1_dataset1.ipynb```, ```Task1_dataset2.ipynb```, ```Task1_dataset3.ipynb```, ```Task2_dataset_combined.ipynb```.
+
+These can be viewed for detailed hyperparameter tuning and %data in training.
+
+More trial and error python notebooks can be found in the folder ```trial```, they need to be brought in the directory of dataset to work.
+
+We have provided a document for graphs, the folder for params_and weights contains parameters and weights obtained, these are obtained after running the python notebooks.
+
+The pattern.py file finds pattern in dataset 3 , which produces output in terminal.
+
+
+
+## ML Model Application on Emoticon, Deep Features, and Text Sequence Datasets
+
+## Overview
+
+This repository contains the implementation of various machine learning models applied to three different datasets: *Emoticon, **Deep Features, and **Text Sequence*. The goal was to train, evaluate, and tune multiple machine learning algorithms on each dataset, and then combine all three datasets to build a more comprehensive model. The main steps in this project include:
+
+1. Applying various machine learning models to each individual dataset.
+2. Hyperparameter tuning to find the best parameters for each model.
+3. Combining all three datasets to form a unified dataset.
+4. Applying models to the combined dataset and achieving the highest accuracy with the Decision Tree model.
+
+## Datasets
+
+1. *Emoticon Dataset*: This dataset contains emoticon features extracted from input strings. Each data point is represented as an embedding with several features.
+   
+2. *Deep Features Dataset*: The deep features dataset represents input data in the form of a 13x786 matrix. These features are extracted from a deep neural network, where each row corresponds to a 786-dimensional embedding for emoticon features.
+
+3. *Text Sequence Dataset*: This dataset contains sequences of text, preprocessed and tokenized for model input. Features are represented as sequences, where each word or token in the input string is mapped to a numeric feature.
+
+## Applied Machine Learning Models
+
+For each dataset, we applied several machine learning models to find the best fit for the data:
+
+- *Logistic Regression*
+- *Support Vector Machine (SVM)*
+- *Random Forest*
+- *LSTM Model (for sequence data)*
+- *Decision Tree*
+- *K-NN*
+- *LwP*
+
+### Results on Individual Datasets
+After applying several models to each dataset, we found that the *LSTM model* performed best on all three datasets, especially when dealing with sequence and matrix-style inputs. The highest accuracy was achieved with the LSTM models after hyperparameter tuning.
+
+### Hyperparameter Tuning
+We used hyperparameter tuning techniques (Grid Search and Randomized Search) to optimize each model’s performance. By exploring a wide range of parameters for each model, we identified the optimal hyperparameters, resulting in a significant boost in accuracy.
+
+## Combining Datasets
+After processing each dataset individually, we combined the features from all three datasets (Emoticon, Deep Features, and Text Sequence) into a unified dataset. The combined dataset allowed for a richer representation of the data, leveraging multiple sources of information.
+
+### Models on Combined Dataset
+We applied various machine learning models to the combined dataset. After testing multiple algorithms, we found that the *Decision Tree model* provided the highest accuracy on the combined data, outperforming other models.
+
+## Conclusion
+
+1. LSTM models provided the best results when applied to individual datasets.
+2. After combining the datasets, the Decision Tree model achieved the highest accuracy, outperforming more complex models like SVM and Random Forest.
+3. Hyperparameter tuning played a key role in optimizing the models and achieving the best results.
+
+## Requirements
+
+- Python 3.x
+- Libraries: numpy, pandas, scikit-learn, tensorflow (for LSTM), matplotlib
+
+
+

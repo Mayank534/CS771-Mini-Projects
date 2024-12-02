@@ -1,0 +1,1 @@
+{"vocab_size": 1000, "max_len": 20, "lstm_units": 50, "learning_rate": 0.001, "batch_size": 32, "epochs": 20, "embedding_dim": 64, "dropout_rate": 0.3, "recurrent_dropout": 0.2}
